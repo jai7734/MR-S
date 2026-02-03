@@ -1,25 +1,93 @@
-Project Name: MR. S (AI Agri Assistant)
-Tagline: A vertical AI platform specializing in hyperlocal agricultural intelligence and support.
+# MR. S (AI Agri Assistant)
 
-Concept & Vision:
-This project represents the strategic evolution of the MR. S AI engine from a general-purpose assistant into a specialized "Agri Assistant." The goal was to leverage the core capabilities in voice, search, and data retrieval and apply them to the critical challenges faced in agriculture, creating a one-stop-shop for modern farmers.
+**Tagline:** A modular AI platform for agricultural intelligence and decision support.
 
-Core Features & Technical Execution:
+---
 
-Specialized AI Engine: Adapted the original MR. S's RAG and multi-agent architecture to process agricultural data, curating knowledge bases from local farming manuals and organic certification guidelines to power accurate, context-aware responses.
+## 🧠 Project Summary
 
-Multi-Modal Interaction:
+MR. S (AI Agri Assistant) is a research-driven, modular AI system designed to assist farmers with data-driven insights.  
+The focus of this repository is the **core AI pipeline for image-based crop analysis and structured output**, with a clear roadmap toward additional modules such as planning tools and knowledge services.
 
-Voice-First in Telugu: Utilized OpenAI's Whisper for robust speech-to-text and fine-tuned open-source LLMs (Llama 3) to ensure fluent and accurate Telugu comprehension and output.
+This project prioritizes:
+- **Reproducible ML pipelines**
+- **Production-ready APIs**
+- **Scalable data workflows**
+- **Experiment tracking and versioning**
+- **Clear deliverables stage by stage**
 
-Visual Disease Diagnosis: Built a custom image pipeline with PyTorch and OpenCV, training EfficientNet models on a curated dataset to provide instant, offline-capable disease classification.
+---
 
-Predictive Planning: Developed algorithms that synthesize user input, real-time weather API data, and crop growth stages to generate actionable, week-by-week planning calendars and proactive alerts.
+## 📌 Current Features (Implemented or In Progress)
 
-Integrated Agri-Services Suite:
+### 🔹 Vision → Structured Output (MVP)
+- Image loading and preprocessing
+- Vision model inference for crop condition detection
+- Structured JSON output for downstream use
 
-Knowledge Hub: Step-by-step guides for value addition (waste recycling), business legalities, and adopting new global farming tools.
+*This is the current priority and active development focus.*
 
-E-Commerce Module: A full-featured marketplace built with React and Node.js, allowing farmers to create storefronts, list products, and manage transactions.
+---
 
-Community & Map Services: A forum for user interaction and geolocation features to find nearby input shops, leveraging Google Maps API.
+## 🚀 Future Modules (Planned)
+
+These will be added incrementally with proper validation:
+
+| Module | Description |
+|--------|-------------|
+| Voice Assistant (Telugu) | Speech-to-text using Whisper, domain-tuned models |
+| RAG (Retrieval) | Knowledge base + local farming manuals |
+| Planning System | Weekly crop calendars and alerts |
+| E-Commerce | Marketplace for agricultural products |
+| Community | Forums and interaction tools |
+| Maps Integration | Geo-based services (shops, weather) |
+
+**Note:** These features are part of the long-term roadmap and will be released as separate modules.
+
+---
+
+## 🧠 Roadmap
+
+1. **MVP – Image ML Pipeline**  
+   - Model training + inference  
+   - Dockerized API  
+   - JSON structure output
+
+2. **Experiment Tracking & Versioning**  
+   - MLflow tracking  
+   - Model version tagging
+
+3. **API Deployment**  
+   - FastAPI + Docker  
+   - Minimal latency inference
+
+4. **User Interaction Modules**  
+   - Voice, RAG, planning, knowledge
+
+5. **Service Layer Add-ons**  
+   - Maps, community, marketplace
+
+---
+
+## 📦 Tech Stack
+
+| Area | Technology |
+|------|------------|
+| Image Analysis | PyTorch, EfficientNet |
+| Backend API | FastAPI |
+| Experiment Tracking | MLflow |
+| Deployment | Docker |
+| Storage & Versioning | Git + DVC (future) |
+| Data Processing | PIL, OpenCV |
+| Testing | Pytest |
+| Environment | WSL2 (Ubuntu), VS Code |
+
+---
+
+## 🛠 Installation (Example)
+
+> This section will grow as the project evolves.
+
+```bash
+git clone https://github.com/jai7734/MR-S.git
+cd MR-S
